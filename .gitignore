@@ -32,3 +32,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# My mods
+/.idea
+/.vscode
+yarn.lock*
