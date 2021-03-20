@@ -1,20 +1,21 @@
 import styled from 'styled-components';
+import {Container} from "./layout/container";
 
-export function Header({ isDark }) {
+export function Header() {
     return (
-        <HeaderStyled isDark={isDark}>
-            <div className='container'>
-                <div className="logo">
+        <HeaderStyled >
+            <Container>
+                <div>
                     <img src="/images/logo.svg" alt="Sites logo"/>
-                    <span className="logo-text">Next Movies</span>
+                    <span>Next Movies</span>
                 </div>
-            </div>
+            </Container>
         </HeaderStyled>
     )
 }
 
 const HeaderStyled = styled.header`
-  background: ${props => props.isDark ? '#000000' : '#efefef'};
+  background: ${({theme}) => theme.color.primary}; // Checking if theme is working
   padding: 20px;
 
   .logo {

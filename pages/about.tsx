@@ -1,4 +1,4 @@
-function about() {
+const about = () => {
     return 'I am an about page'
 }
 
