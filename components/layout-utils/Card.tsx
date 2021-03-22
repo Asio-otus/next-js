@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {baseURL} from "../api/api";
+import {baseURL} from "../../api/api";
 
 export const Card = ({movie}) => {
     return (

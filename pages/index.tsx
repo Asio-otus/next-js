@@ -1,7 +1,7 @@
 // Index.tsx is the default home page in Next.js
 
 import {API} from "../api/api";
-import {Card} from "../components/Card";
+import {Card} from "../components/layout-utils/Card";
 
 const Home = ({movies}) => {
     console.log(movies)

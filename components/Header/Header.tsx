@@ -1,13 +1,20 @@
 import styled from 'styled-components';
-import {Container} from "./layout/container";
+import {Container} from "../layout-utils/Container";
+import Navigation from "./Navigation";
+import Link from 'next/link'
 
 export function Header() {
     return (
-        <HeaderStyled >
+        <HeaderStyled>
             <Container>
                 <div>
-                    <img src="/images/logo.svg" alt="Sites logo"/>
-                    <span>Next Movies</span>
+                    <Link href="/">
+                        <div>
+                            <img src="/images/logo.svg" alt="Sites logo"/>
+                            <span>Next Movies</span>
+                        </div>
+                    </Link>
+                    <Navigation/>
                 </div>
             </Container>
         </HeaderStyled>
